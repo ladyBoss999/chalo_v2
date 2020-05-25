@@ -1,0 +1,79 @@
+header{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.bg-text {   
+    margin-top: 18px;
+  color: white;
+position: absolute; 
+  right: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+    text-align: right;
+  
+}
+.bg-text h3{
+    margin-top: 20%;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;      
+}
+.bg-text h1{
+    margin-top: 70px;
+    font-size: 85px;
+    font-family:'Cormorant Garamond', serif;
+    margin-bottom: 0;
+}
+.bg-text h5{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family:'Cormorant Garamond', sans-serif;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+ul {
+    font-size: 15px;
+    font-family:'Open Sans Condensed', sans-serif;
+    list-style-type: none; 
+    padding: 2px;
+    overflow: hidden;
+    color: white;
+}
+
+li {
+  float: left;
+font-weight: bold;
+text-align: center;
+}
+
+li a {
+   
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  -webkit-transform: scale(1.2); 
+}
+
+.active {
+  background-color: #b0c6b1;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url("assets/img/bg3.jpeg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-text {
+    float: none;
+    width: 100%;
+  }
+}

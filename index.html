@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Lato:wght@100&family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="jsFile.js"></script>
+    <script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+ 'url("assets/img/bg1.jpg")'
+    ,'url("assets/img/bg2.jpg")'
+    ,'url("assets/img/bg3.jpg")'
+    ,'url("assets/img/bg5.jpg")'
+    ,'url("assets/img/bg6.jpg")'
+    ,'url("assets/img/bg7.jpg")');
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 2500);
+
+header.css('background-image', backgrounds[0]);
+header.css('height', '100vh');
+header.css('width', '100%');
+header.css('background-repeat', 'no-repeat');
+header.css('background-size', 'cover');
+header.css('-webkit-background-size', 'cover');
+header.css('-moz-background-size', 'cover');
+header.css('-o-background-size', 'cover');
+});
+</script>
+</head>
+<body>
+<header class="bg-text">
+        <div >
+            <h3>925 standard in silver jewellery</h3>
+            <h1>Chalo</h1>
+            <h5>Handmade in silver and natural stones</h5>            
+        </div>
+    <div class="row">  
+    <ul>
+      <li><a href="#">RINGS</a></li>
+        <li><a href="#">BRACELETS</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SHIP NOW</a></li>
+        
+    </ul>
+  
+</header>    
+    </body>
+</html>

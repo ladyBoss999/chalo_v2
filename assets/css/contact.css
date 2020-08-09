@@ -1,0 +1,12 @@
+.container .contactus p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+b{
+    margin-top: 20px;
+}
+.icons{
+    font-size: 30px;
+}

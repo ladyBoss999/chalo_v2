@@ -15,12 +15,12 @@ $(document).ready(function(){
 var header = $('body');
 
 var backgrounds = new Array(
- 'url("assets/img/bg1.jpg")'
-    ,'url("assets/img/bg2.jpg")'
-    ,'url("assets/img/bg3.jpg")'
-    ,'url("assets/img/bg5.jpg")'
-    ,'url("assets/img/bg6.jpg")'
-    ,'url("assets/img/bg7.jpg")');
+    'url("assets/img/rings/Blue%20topaz%20from%20the%20rough1.jpg")'
+    ,'url("assets/img/bracelets/Opal%20bracelet%201.jpg")'
+    ,'url("assets/img/rings/Plain%20silver%20designer%20ring.jpg")'
+    ,'url("assets/img/bracelets/Shell%20bracelet%201.jpg")'
+    ,'url("assets/img/rings/Sunstone%20Spiral%20ring%202.jpeg")' 
+   ,'url("assets/img/rings/Blue%20topaz%20from%20the%20rough.jpg")');
 
 var current = 0;
 
@@ -32,6 +32,8 @@ function nextBackground() {
 setInterval(nextBackground, 2500);
 
 header.css('background-image', backgrounds[0]);
+header.css('display', 'flex');
+header.css('justify-content', 'flex-end');
 header.css('height', '100vh');
 header.css('width', '100%');
 header.css('background-repeat', 'no-repeat');
@@ -50,10 +52,10 @@ header.css('-o-background-size', 'cover');
             <h5>Handmade in silver and natural stones</h5>            
         </div>
     <div class="row">  
-    <ul>
-      <li><a href="#">RINGS</a></li>
-        <li><a href="#">BRACELETS</a></li>
-        <li><a href="#">ABOUT US</a></li>
+    <ul class="navBar">
+      <li><a href="rings.html">RINGS</a></li>
+        <li><a href="bracelets.html">BRACELETS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
         <li><a href="#">SHIP NOW</a></li>
         
     </ul>
